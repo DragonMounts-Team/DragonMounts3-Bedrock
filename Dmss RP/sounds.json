@@ -15,6 +15,185 @@
 					"step": "mob.custom_dragon.step"
 				}
 			},
+			"dmss:emerald_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step"
+				}
+			},
+			"dmss:gold_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step"
+				}
+			},
+			"dmss:quartz_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step"
+				}
+			},
+			"dmss:redstone_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step"
+				}
+			},
+			"dmss:acacia_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:acacia_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:azalea_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:azalea_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:birch_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:birch_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
 			"dmss:cherry_dragon": {
 				"volume": 5.0,
 				"pitch": [
@@ -42,6 +221,293 @@
 				}
 			},
 			"dmss:cherry_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:cherrydark_oak_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:dark_oak_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:jungle_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:jungle_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:mangrove_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:mangrove_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:oak_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:oak_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:pale_oak_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:pale_oak_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:spruce_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:cherryspruce_dragon_egg": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"hurt": "block.turtle_egg.break",
+					"death": {
+						"sound": "block.turtle_egg.break",
+						"volume": 5.0,
+						"pitch": 0.5
+					}
+				}
+			},
+			"dmss:sculk_dragon": {
+				"volume": 5.0,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+					"ambient": "mob.custom_dragon.growl",
+					"hurt": "mob.custom_dragon.hit",
+					"saddle": "armor.equip_chain",
+					"attack": "mob.custom_dragon.melee",
+					"shoot":"mob.custom_dragon.breath",
+					"step": "mob.custom_dragon.step",
+					"eat": {
+						"sound": "mob.custom_dragon.eat",
+						"volume": [
+							0.5,
+							1.5
+						],
+						"pitch": [
+							0.8,
+							1.2
+						]
+					}
+				}
+			},
+			"dmss:sculk_dragon_egg": {
 				"volume": 5.0,
 				"pitch": [
 					0.8,
