@@ -83,6 +83,81 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             applyDurabilityDamage(source, mainhand);
         }
       });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:acacia_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:acacia_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:acacia_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:acacia_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:azalea_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:azalea_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:azalea_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:azalea_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:birch_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:birch_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:birch_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:birch_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
     initEvent.itemComponentRegistry.registerCustomComponent('dmss:cherry_wand', {
         onUse(event) {
             const source = event.source;
@@ -105,6 +180,171 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 dimension.runCommandAsync(`particle minecraft:cherry_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:dark_oak_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:dark_oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:dark_oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:dark_oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:jungle_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:jungle_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:jungle_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:jungle_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:mangrove_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:mangrove_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:mangorve_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:mangove_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:oak_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:pale_oak_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:pale_oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:pale_oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:pale_oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:spruce_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const offset1 = {x: position.x,y: position.y+1,z: position.z};
+            const offset2 = {x: position.x,y: position.y+2,z: position.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            source.runCommandAsync(`effect @s invisibility 10 1 true`);
+            source.runCommandAsync(`effect @s speed 5 1 true`);
+            let x = 0;
+            while (x < 5) {
+                dimension.runCommandAsync(`particle minecraft:spruce_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle minecraft:spruce_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle minecraft:spruce_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                x++;
+            }
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:sculk_wand', {
+        onUse(event) {
+            const source = event.source;
+            const position = {x: source.location.x,y: source.location.y,z: source.location.z};
+            const dimension = source.dimension;
+
+            const equippable = source.getComponent("minecraft:equippable");
+            if (!equippable) source.sendMessage('no equippable');
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+            if (!mainhand) source.sendMessage('no mainhand;');
+
+            dimension.spawnEntity('minecraft:xp_orb', position)
             MagicDamage(source, mainhand);
         }
     });
@@ -221,6 +461,25 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
             dimension.runCommandAsync(`fill ${pointA.x} ${pointA.y} ${pointA.z} ${pointB.x} ${pointB.y} ${pointB.z} redstone_ore replace stone`);
             dimension.runCommandAsync(`fill ${pointA.x} ${pointA.y} ${pointA.z} ${pointB.x} ${pointB.y} ${pointB.z} deepslate_redstone_ore replace deepslate`);
+            MagicDamage(source, mainhand);
+        }
+    });
+    initEvent.itemComponentRegistry.registerCustomComponent('dmss:sculk_staff', {
+        onUse(event) {
+            const source = event.source;
+            const dim = source.dimension;
+            const loc = source.location
+
+            const equippable = source.getComponent("minecraft:equippable");
+            const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
+
+            for (const target of dim.getEntities({location: loc,maxDistance: 10})) {
+                if(target===source)return
+                target.addEffect("darkness", 1200, {amplifier: 1,showParticles: true});
+                if(target.typeId.inludes("player")){
+                    target.playSound("mob.warden.heartbeat")
+                }
+            }
             MagicDamage(source, mainhand);
         }
     });

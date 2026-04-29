@@ -11,12 +11,22 @@
               "name": "dmss:ingots"
             },
             "items": [
-              "dmss:cherry_dragon_ingot",
               "dmss:lapis_dragon_ingot",
               "dmss:emerald_dragon_ingot",
               "dmss:gold_dragon_ingot",
               "dmss:quartz_dragon_ingot",
-              "dmss:redstone_dragon_ingot"
+              "dmss:redstone_dragon_ingot",
+              "dmss:acacia_dragon_ingot",
+              "dmss:azalea_dragon_ingot",
+              "dmss:birch_dragon_ingot",
+              "dmss:cherry_dragon_ingot",
+              "dmss:dark_oak_dragon_ingot",
+              "dmss:jungle_dragon_ingot",
+              "dmss:mangrove_dragon_ingot",
+              "dmss:oak_dragon_ingot",
+              "dmss:pale_oak_dragon_ingot",
+              "dmss:spruce_dragon_ingot",
+              "dmss:sculk_dragon_ingot"
             ]
           }
         ]
@@ -30,12 +40,22 @@
               "name": "dmss:scales"
             },
             "items": [
-              "dmss:cherry_dragon_scales",
               "dmss:lapis_dragon_scales",
               "dmss:emerald_dragon_scales",
               "dmss:gold_dragon_scales",
               "dmss:quartz_dragon_scales",
-              "dmss:redstone_dragon_scales"
+              "dmss:redstone_dragon_scales",
+              "dmss:acacia_dragon_scales",
+              "dmss:azalea_dragon_scales",
+              "dmss:birch_dragon_scales",
+              "dmss:cherry_dragon_scales",
+              "dmss:dark_oak_dragon_scales",
+              "dmss:jungle_dragon_scales",
+              "dmss:mangrove_dragon_scales",
+              "dmss:oak_dragon_scales",
+              "dmss:pale_oak_dragon_scales",
+              "dmss:spruce_dragon_scales",
+              "dmss:sculk_dragon_scales"
             ]
           }
         ]
@@ -49,12 +69,22 @@
               "name": "dmss:spellstone"
             },
             "items": [
-              "dmss:cherry_spellstone",
               "dmss:lapis_spellstone",
               "dmss:emerald_spellstone",
               "dmss:gold_spellstone",
               "dmss:quartz_spellstone",
-              "dmss:redstone_spellstone"
+              "dmss:redstone_spellstone",
+              "dmss:acacia_spellstone",
+              "dmss:azalea_spellstone",
+              "dmss:birch_spellstone",
+              "dmss:cherry_spellstone",
+              "dmss:dark_oak_spellstone",
+              "dmss:jungle_spellstone",
+              "dmss:mangrove_spellstone",
+              "dmss:oak_spellstone",
+              "dmss:pale_oak_spellstone",
+              "dmss:spruce_spellstone",
+              "dmss:sculk_spellstone"
             ]
           }
         ]
@@ -68,12 +98,22 @@
               "name": "dmss:staff"
             },
             "items": [
-              "dmss:cherry_dragon_staff",
               "dmss:lapis_dragon_staff",
               "dmss:emerald_dragon_staff",
               "dmss:gold_dragon_staff",
               "dmss:quartz_dragon_staff",
-              "dmss:redstone_dragon_staff"
+              "dmss:redstone_dragon_staff",
+              "dmss:acacia_dragon_staff",
+              "dmss:azalea_dragon_staff",
+              "dmss:birch_dragon_staff",
+              "dmss:cherry_dragon_staff",
+              "dmss:dark_oak_dragon_staff",
+              "dmss:jungle_dragon_staff",
+              "dmss:mangrove_dragon_staff",
+              "dmss:oak_dragon_staff",
+              "dmss:pale_oak_dragon_staff",
+              "dmss:spruce_dragon_staff",
+              "dmss:sculk_dragon_staff"
             ]
           }
         ]
@@ -105,12 +145,22 @@
               "name": "dmss:wand"
             },
             "items": [
-              "dmss:cherry_dragon_wand",
               "dmss:lapis_dragon_wand",
               "dmss:emerald_dragon_wand",
               "dmss:gold_dragon_wand",
               "dmss:quartz_dragon_wand",
-              "dmss:redstone_dragon_wand"
+              "dmss:redstone_dragon_wand",
+              "dmss:acacia_dragon_wand",
+              "dmss:azalea_dragon_wand",
+              "dmss:birch_dragon_wand",
+              "dmss:cherry_dragon_wand",
+              "dmss:dark_oak_dragon_wand",
+              "dmss:jungle_dragon_wand",
+              "dmss:mangrove_dragon_wand",
+              "dmss:oak_dragon_wand",
+              "dmss:pale_oak_dragon_wand",
+              "dmss:spruce_dragon_wand",
+              "dmss:sculk_dragon_wand"
             ]
           }
         ]
