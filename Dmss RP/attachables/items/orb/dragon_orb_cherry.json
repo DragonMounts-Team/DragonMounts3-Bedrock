@@ -3,14 +3,12 @@
   "minecraft:attachable": {
     "description": {
       "identifier": "dmss:dragon_orb_cherry",
-      "render_controllers": ["controller.render.item_default"],
+      "render_controllers": ["controller.render.default"],
       "materials": {
-        "default": "entity_emissive_alpha",
-        "enchanted": "entity_alphatest_glint"
+        "default": "entity_alphablend"
       },
       "textures": {
-        "default": "textures/items/dragon_orb/cherry",
-        "enchanted": "textures/misc/enchanted_item_glint"
+        "default": "textures/items/dragon_orb/cherry"
       },
       "geometry": {
         "default": "geometry.big_item"

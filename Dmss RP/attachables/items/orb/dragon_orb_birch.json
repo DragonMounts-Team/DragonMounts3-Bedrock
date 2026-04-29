@@ -2,13 +2,13 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "dmss:dragon_orb",
+      "identifier": "dmss:dragon_orb_birch",
       "render_controllers": ["controller.render.default"],
       "materials": {
         "default": "entity_alphablend"
       },
       "textures": {
-        "default": "textures/items/dragon_orb/orb_1"
+        "default": "textures/items/dragon_orb/birch"
       },
       "geometry": {
         "default": "geometry.big_item"
