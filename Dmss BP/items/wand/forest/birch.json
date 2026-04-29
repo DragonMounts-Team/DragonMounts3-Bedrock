@@ -1,0 +1,26 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:item": {
+		"description": {
+			"identifier": "dmss:birch_dragon_wand"
+		},
+		"components": {
+			"minecraft:custom_components": ["dmss:birch_wand"],
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:icon":"birch_dragon_wand",
+			"minecraft:durability": {
+				"max_durability": 20
+			},
+			"minecraft:display_name": {
+				"value": "Birch dragon wand"
+			},
+            "minecraft:interact_button":"turn invisible",
+			"minecraft:tags": {
+                "tags": [
+					"dmss:wand"
+				]
+            }
+		}
+	}
+}
