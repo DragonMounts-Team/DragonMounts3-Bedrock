@@ -2,12 +2,12 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "dmss:cherry_dragon_egg",
+			"identifier": "dmss:acacia_dragon_egg",
 			"materials": {
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/forest_dragon/egg_cherry"
+				"default": "textures/entity/forest_dragon/egg_acacia"
 			},
 			"geometry": {
 				"default": "geometry.forest_egg"
@@ -28,14 +28,13 @@
 				"hatch": "mob.custom_dragon.hatch"
 			},
 			"particle_effects": {
-				"hatching": "dmss:cherry_egg_hatching",
-				"transforming": "minecraft:sculk_soul_particle"
+				"hatching": "dmss:acacia_egg_hatching"
 			},
 			"render_controllers": [
 				"controller.render.default"
 			],
 			"spawn_egg": {
-				"texture": "cherry_dragon_egg"
+				"texture": "acacia_dragon_egg"
 			}
 		}
 	}
