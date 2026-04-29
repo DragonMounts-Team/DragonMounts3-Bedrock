@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.azalea_dragon": {
+        	"arrays": {
+          		"textures": {
+            		"Array.skins": [
+              			"Texture.mossy",
+              			"Texture.flowering"
+            		]
+          		}
+        	},
+		    "part_visibility": [
+			    {"hornSaddle": "!query.is_saddled"},
+			    {"saddle":"query.is_saddled"},
+			    {"chests":"query.is_chested"}
+		    ],
+		    "geometry": "Geometry.default",
+            "materials": [
+				{ "*": "Material.default" },
+				{"horn_t12":"Material.transparent"},
+				{"horn_t11":"Material.transparent"},
+				{"horn_t10":"Material.transparent"},
+				{"horn_t9":"Material.transparent"},
+				{"horn_t8":"Material.transparent"},
+				{"horn_t7":"Material.transparent"},
+				{"horn_t6":"Material.transparent"},
+				{"horn_t5":"Material.transparent"},
+				{"horn_t4":"Material.transparent"},
+				{"horn_t3":"Material.transparent"},
+				{"horn_t2":"Material.transparent"},
+				{"horn_t1":"Material.transparent"},
+				{"body":"Material.transparent"},
+				{"horn_n5":"Material.transparent"},
+				{"horn_n4":"Material.transparent"},
+				{"horn_n3":"Material.transparent"},
+				{"horn_n2":"Material.transparent"},
+				{"horn_n1":"Material.transparent"},
+				{"horns_h":"Material.transparent"},
+				{"hornSaddle":"Material.transparent"}
+			],
+        	"textures": [ "Array.skins[query.variant]" ]
+		}
+	}
+}
