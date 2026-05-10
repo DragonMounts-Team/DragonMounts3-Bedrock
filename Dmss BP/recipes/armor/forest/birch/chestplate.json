@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:forest_chestplate_birch"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"# #",
+			"###",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "dmss:birch_dragon_scales"
+			}
+		},
+		"result": {
+			"item": "dmss:forest_dragon_jerkin"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}
