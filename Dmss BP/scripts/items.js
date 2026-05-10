@@ -342,10 +342,21 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             const equippable = source.getComponent("minecraft:equippable");
             if (!equippable) source.sendMessage('no equippable');
             const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
-            if (!mainhand) source.sendMessage('no mainhand;');
+            if (!mainhand) source.sendMessage('no mainhand');
 
-            dimension.spawnEntity('minecraft:xp_orb', position)
-            MagicDamage(source, mainhand);
+            if(source.level>0){
+                source.addLevels(-1);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                dimension.spawnEntity('minecraft:xp_orb', position);
+                MagicDamage(source, mainhand);
+                return
+            }
+            else{source.onScreenDisplay.setActionBar('§4not enogh levels');return}
         }
     });
     initEvent.itemComponentRegistry.registerCustomComponent('dmss:forest_staff', {
@@ -473,14 +484,16 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             const equippable = source.getComponent("minecraft:equippable");
             const mainhand = equippable.getEquipmentSlot(EquipmentSlot.Mainhand);
 
+            MagicDamage(source, mainhand);
             for (const target of dim.getEntities({location: loc,maxDistance: 10})) {
-                if(target===source)return
-                target.addEffect("darkness", 1200, {amplifier: 1,showParticles: true});
-                if(target.typeId.inludes("player")){
-                    target.playSound("mob.warden.heartbeat")
+                if(target===source){return;}
+                else{
+                    target.addEffect("darkness", 1200, {amplifier: 1,showParticles: true});
+                    if(target.typeId.inludes("player")){
+                        target.playSound("mob.warden.heartbeat")
+                    };
                 }
             }
-            MagicDamage(source, mainhand);
         }
     });
     initEvent.itemComponentRegistry.registerCustomComponent('dmss:lapis_totem', {
@@ -648,7 +661,7 @@ world.beforeEvents.playerBreakBlock.subscribe((event) => {
                 "minecraft:nether_gold_ore",
                 "minecraft:quartz_ore"
             ];
-        const tags = breakingTool.getTags();
+        if(breakingTool){const tags = breakingTool.getTags();
         if (tags && tags.includes("dmss:forest_axe") && logBlocks.includes(type)) {
             const { x, y, z } = brokenBlock.location;
             const dimension = source.dimension;
@@ -712,6 +725,6 @@ world.beforeEvents.playerBreakBlock.subscribe((event) => {
         dimension.runCommandAsync(`execute positioned ${x} ${y} ${z} if block ~1 ~1 ~ ${type} run setblock ~1 ~1 ~ air destroy`);
         dimension.runCommandAsync(`execute positioned ${x} ${y} ${z} if block ~-1 ~1 ~ ${type} run setblock ~-1 ~1 ~ air destroy`);
         system.run(() => MultibreakDamage(source, breakingTool));
-        }
+        }}
     }
 });
