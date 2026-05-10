@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:sculk_staff"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"  X",
+			" # ",
+			"#  "
+		],
+		"key": {
+			"X": {
+				"item": "dmss:sculk_spellstone"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dmss:sculk_dragon_staff"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}

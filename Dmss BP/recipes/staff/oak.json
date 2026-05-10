@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:oak_staff"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"  X",
+			" # ",
+			"#  "
+		],
+		"key": {
+			"X": {
+				"item": "dmss:oak_spellstone"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dmss:oak_dragon_staff"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}

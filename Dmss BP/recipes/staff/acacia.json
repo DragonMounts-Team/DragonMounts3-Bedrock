@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:acacia_dragon_staff"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"  X",
+			" # ",
+			"#  "
+		],
+		"key": {
+			"X": {
+				"item": "dmss:acacia_spellstone"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dmss:acacia_dragon_staff"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}

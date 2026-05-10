@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:pale_oak_dragon_wand"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"  X",
+			" # "
+		],
+		"key": {
+			"X": {
+				"item": "dmss:pale_oak_spellstone"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dmss:pale_oak_dragon_wand"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}

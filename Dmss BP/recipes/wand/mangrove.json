@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:mangrove_dragon_wand"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"  X",
+			" # "
+		],
+		"key": {
+			"X": {
+				"item": "dmss:mangrove_spellstone"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dmss:mangrove_dragon_wand"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}
