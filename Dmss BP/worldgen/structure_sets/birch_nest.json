@@ -2,19 +2,19 @@
 	"format_version": "1.21.80",
 	"minecraft:structure_set": {
 		"description": {
-			"identifier": "dmss:cherry_nest"
+			"identifier": "dmss:birch_nest"
 		},
 		
 		"placement": {
 			"type": "minecraft:random_spread",
-			"salt": 587717441,
-			"separation": 3,
-			"spacing": 7,
+			"salt": 587717461,
+			"separation": 11,
+			"spacing": 25,
 			"spread_type": "triangular"
 		},
 		"structures": [
 			{
-				"structure": "dmss:cherry_tori",
+				"structure": "dmss:birch_pond",
 				"weight": 10
 			}
 		]

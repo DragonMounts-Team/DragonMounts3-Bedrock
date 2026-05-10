@@ -2,26 +2,21 @@
   "format_version": "1.21.80",
   "minecraft:jigsaw": {
     "description": {
-      "identifier": "dmss:cherry_tori"
+      "identifier": "dmss:sky_island"
     },
-    "start_pool": "dmss:cherry_tori",
+    "start_pool": "dmss:sky_island_base",
     "step": "surface_structures",
     "heightmap_projection": "world_surface",
     "start_height": {
         "type": "constant",
         "value": {
-            "absolute": -1
+            "absolute": -10
         } 
     },
-    "max_depth": 1,
+    "max_depth": 3,
     "biome_filters": [
       {
         "all_of": [
-          {
-            "test": "has_biome_tag",
-            "operator": "==",
-            "value": "cherry_grove"
-          },
           {
             "test": "has_biome_tag",
             "operator": "!=",

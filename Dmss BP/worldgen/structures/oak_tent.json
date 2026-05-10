@@ -2,26 +2,31 @@
   "format_version": "1.21.80",
   "minecraft:jigsaw": {
     "description": {
-      "identifier": "dmss:cherry_tori"
+      "identifier": "dmss:oak_tent"
     },
-    "start_pool": "dmss:cherry_tori",
+    "start_pool": "dmss:oak_tent",
     "step": "surface_structures",
     "heightmap_projection": "world_surface",
     "start_height": {
         "type": "constant",
         "value": {
-            "absolute": -1
+            "absolute": 0
         } 
     },
-    "max_depth": 1,
+    "max_depth": 3,
     "biome_filters": [
       {
         "all_of": [
+          {"any_of": [{
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "forest"
+          },
           {
             "test": "has_biome_tag",
             "operator": "==",
-            "value": "cherry_grove"
-          },
+            "value": "plains"
+          }]},
           {
             "test": "has_biome_tag",
             "operator": "!=",
@@ -40,10 +45,10 @@
         ]
       }
     ],
-    "terrain_adaptation": "none",
+    "terrain_adaptation": "beard_thin",
     "liquid_settings": "apply_waterlogging",
     "dimension_padding": {
-      "top": 20,
+      "top": 10,
       "bottom": 128
     }
   }

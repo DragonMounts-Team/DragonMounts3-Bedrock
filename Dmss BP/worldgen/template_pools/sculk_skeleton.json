@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "dmss:sculk_skeleton"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "sculk_nest",
+          "processors": "dmss:empty",
+          "projection":"rigid"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "dmss:sculk_skeleton"
+  }
+}
