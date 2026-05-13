@@ -3,17 +3,23 @@
 	"minecraft:attachable": {
 		"description": {
 			"identifier": "dmss:ore_dragon_chestplate",
-			"render_controllers": ["controller.render.armor"],
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest_glint"
-			},
+			"render_controllers": [
+				"controller.render.ore_armor_defalut",
+				"controller.render.ore_armor_overlay"
+			],
+      		"materials": {
+        		"default": "entity_emissive_alpha",
+				"color": "entity_alphatest_change_color",
+        		"enchanted": "entity_alphatest_change_color_glint"
+      		},
 			"textures": {
 				"default": "textures/armor/ore/chestplate",
+				"dye": "textures/armor/ore/chestplate_dye",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
-				"default": "geometry.dmss_chestplate"
+				"default": "geometry.dmss_chestplate",
+				"dye": "geometry.dmss_chestplate_dye"
 			}
 		}
 	}
