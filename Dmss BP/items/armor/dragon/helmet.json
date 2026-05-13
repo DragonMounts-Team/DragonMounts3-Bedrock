@@ -9,7 +9,15 @@
       		}
 		},
 		"components": {
-			"minecraft:icon": "dragon_helmet",
+			"minecraft:dyeable": {
+  				"default_color": "#ffffff"
+			},
+			"minecraft:icon": {
+  				"textures": {
+    				"default": "dragon_helmet",
+					"dyed": "dragon_helmet"
+  				}
+			},
 			"minecraft:max_stack_size":1,
 			"minecraft:wearable": {
 				"protection": 4,

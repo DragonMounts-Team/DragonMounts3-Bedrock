@@ -9,7 +9,15 @@
       		}
 		},
 		"components": {
-			"minecraft:icon": "dragon_chestplate",
+			"minecraft:dyeable": {
+  				"default_color": "#ffffff"
+			},
+			"minecraft:icon": {
+  				"textures": {
+    				"default": "dragon_chestplate",
+					"dyed": "dragon_chestplate"
+  				}
+			},
 			"minecraft:max_stack_size":1,
 			"minecraft:wearable": {
 				"protection": 4,
