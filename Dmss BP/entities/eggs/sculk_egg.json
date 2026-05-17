@@ -18,7 +18,7 @@
         "minecraft:interact": {
           "interactions": [
             {
-              "interact_text": "Pick it up",
+              "interact_text": "%egg.pick_up",
               "spawn_items": {
                 "table": "loot_tables/egg_item/sculk_dragon.json"
               },
@@ -35,7 +35,7 @@
               }
             },
             {
-              "interact_text": "Unlock guidebook",
+              "interact_text": "%egg.unlock_guidebook",
               "on_interact": {
                 "filters": {
                   "all_of": [
@@ -58,7 +58,7 @@
                 "event": "hatching",
                 "target": "self"
               },
-              "interact_text": "Hatch Egg"
+              "interact_text": "%egg.hatch_start"
             }
           ]
         }
@@ -67,9 +67,6 @@
         "minecraft:is_ignited": {},
         "minecraft:ageable": {
           "duration": 24000,
-            "feed_items": [
-              {"item": "minecraft:bone_meal","growth": 0.142857}
-            ],
           "grow_up": {
             "event": "hatch",
             "target": "self"

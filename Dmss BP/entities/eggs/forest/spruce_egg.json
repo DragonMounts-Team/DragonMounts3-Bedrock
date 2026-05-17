@@ -18,7 +18,7 @@
         "minecraft:interact": {
           "interactions": [
             {
-              "interact_text": "Pick it up",
+              "interact_text": "%egg.pick_up",
               "spawn_items": {
                 "table": "loot_tables/egg_item/spruce_dragon.json"
               },
@@ -35,7 +35,7 @@
               }
             },
             {
-              "interact_text": "chalkboardScreen.unlocked guidebook",
+              "interact_text": "%egg.unlock_guidebook",
               "on_interact": {
                 "filters": {
                   "all_of": [
@@ -58,7 +58,7 @@
                 "event": "hatching",
                 "target": "self"
               },
-              "interact_text": "Hatch Egg"
+              "interact_text": "%egg.hatch_start"
             }
           ]
         }
