@@ -10,7 +10,7 @@
         "texture": "cherry_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Cherry Spellstone"
+        "value": "%spellstone.cherry"
       }
     }
   }

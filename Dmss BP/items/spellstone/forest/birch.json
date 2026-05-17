@@ -10,7 +10,7 @@
         "texture": "birch_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Birch Spellstone"
+        "value": "%spellstone.birch"
       }
     }
   }

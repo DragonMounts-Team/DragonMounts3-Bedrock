@@ -36,7 +36,7 @@
                 "slot": "armor_torso"
             },
 			"minecraft:display_name": {
-        		"value": "Ore dragon Chestplate"
+        		"value": "%armor.ore_chetsplate"
     		},
 			"minecraft:repairable": {
                 "repair_items": [

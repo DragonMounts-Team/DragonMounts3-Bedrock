@@ -10,7 +10,7 @@
         "texture": "azalea_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Azalea Spellstone"
+        "value": "%spellstone.azalea"
       }
     }
   }

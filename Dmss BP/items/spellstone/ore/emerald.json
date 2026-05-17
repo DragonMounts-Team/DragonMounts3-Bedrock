@@ -10,7 +10,7 @@
         "texture": "emerald_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Emerald Spellstone"
+        "value": "%spellstone.emerald"
       }
     }
   }

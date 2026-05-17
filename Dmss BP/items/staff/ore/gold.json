@@ -13,9 +13,9 @@
 				"max_durability": 20
 			},
 			"minecraft:display_name": {
-				"value": "Ore dragon staff"
+				"value": "%dragon.gold %item.staff"
 			},
-            "minecraft:interact_button":"Shock wave",
+            "minecraft:interact_button":"%staff.wave",
 			"minecraft:tags": {
                 "tags": [
 					"dmss:staff"

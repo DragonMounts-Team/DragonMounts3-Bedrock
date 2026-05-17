@@ -10,7 +10,7 @@
         "texture": "lapis_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Lapis Spellstone"
+        "value": "%spellstone.lapis"
       }
     }
   }

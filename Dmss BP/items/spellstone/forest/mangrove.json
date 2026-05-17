@@ -10,7 +10,7 @@
         "texture": "mangrove_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Mangrove Spellstone"
+        "value": "%spellstone.mangrove"
       }
     }
   }

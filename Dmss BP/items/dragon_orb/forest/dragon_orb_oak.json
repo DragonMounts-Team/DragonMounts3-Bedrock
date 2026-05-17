@@ -13,7 +13,7 @@
         "texture": "dragon_orb_oak"
       },
       "minecraft:display_name": {
-        "value": "Dragon orb"
+        "value": "%orb.dragon"
       }
     }
   }

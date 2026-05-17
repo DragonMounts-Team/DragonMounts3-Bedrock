@@ -13,9 +13,9 @@
 				"max_durability": 20
 			},
 			"minecraft:display_name": {
-				"value": "Sculk dragon staff"
+				"value": "%dragon.sculk %item.staff"
 			},
-            "minecraft:interact_button":"Blind enimies",
+            "minecraft:interact_button":"%staff.blind",
 			"minecraft:tags": {
                 "tags": [
 					"dmss:staff"

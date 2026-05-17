@@ -8,7 +8,7 @@
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "acacia_dragon_scales",
 			"minecraft:display_name": {
-				"value": "Acacia dragon scales"
+				"value": "%dragon.acacia %item.scales"
 			},
 			"minecraft:tags": {
                 "tags": [

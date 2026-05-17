@@ -36,7 +36,7 @@
                 "slot": "armor_feet"
             },
 			"minecraft:display_name": {
-        		"value": "Ore dragon boots"
+        		"value": "%armor.ore_boots"
     		},
 			"minecraft:repairable": {
                 "repair_items": [

@@ -10,7 +10,7 @@
         "texture": "sculk_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Sculk Spellstone"
+        "value": "%spellstone.sculk"
       }
     }
   }

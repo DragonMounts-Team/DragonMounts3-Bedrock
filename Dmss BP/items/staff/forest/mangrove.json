@@ -13,9 +13,9 @@
 				"max_durability": 20
 			},
 			"minecraft:display_name": {
-				"value": "Mangrove dragon staff"
+				"value": "%dragon.mangrove %item.staff"
 			},
-            "minecraft:interact_button":"boost defence",
+            "minecraft:interact_button":"%staff.boost_defence",
 			"minecraft:tags": {
                 "tags": [
 					"dmss:staff"

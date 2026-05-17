@@ -36,7 +36,7 @@
                 "slot": "armor_head"
             },
 			"minecraft:display_name": {
-        		"value": "Ore dragon helmet"
+        		"value": "%armor.ore_helmet"
     		},
 			"minecraft:repairable": {
                 "repair_items": [

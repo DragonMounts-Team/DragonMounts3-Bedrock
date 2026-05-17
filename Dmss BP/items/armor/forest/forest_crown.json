@@ -29,7 +29,15 @@
 						"repair_amount": 63
 					}
 				]
-			}
+			},
+			"minecraft:display_name": {
+        		"value": "%armor.forest_helmet"
+    		},
+			"minecraft:tags": {
+                "tags": [
+					"dmss:armor"
+				]
+            }
 		}
 	}
 }

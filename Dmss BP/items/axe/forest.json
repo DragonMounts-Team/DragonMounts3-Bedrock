@@ -14,13 +14,12 @@
 			"minecraft:damage": 9,
 			"minecraft:hand_equipped": true,
 			"minecraft:can_destroy_in_creative": true,
-			"minecraft:render_offsets": "tools",
 			"minecraft:icon":"forest_dragon_axe",
 			"minecraft:durability": {
 				"max_durability": 2678
 			},
 			"minecraft:display_name": {
-				"value": "Forest dragon axe"
+				"value": "%axe.forest"
 			},
 			"minecraft:enchantable": {
 				"value": 32,

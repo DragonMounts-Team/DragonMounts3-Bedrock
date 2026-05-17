@@ -10,7 +10,7 @@
         "texture": "pale_oak_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Pale oak Spellstone"
+        "value": "%spellstone.pale_oak"
       }
     }
   }

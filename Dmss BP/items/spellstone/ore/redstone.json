@@ -10,7 +10,7 @@
         "texture": "redstone_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Redstone Spellstone"
+        "value": "%spellstone.redstone"
       }
     }
   }

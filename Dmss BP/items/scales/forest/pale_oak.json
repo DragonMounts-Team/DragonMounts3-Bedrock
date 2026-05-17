@@ -8,7 +8,7 @@
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": "pale_oak_dragon_scales",
 			"minecraft:display_name": {
-				"value": "Pale oak dragon scales"
+				"value": "%dragon.pale_oak %item.scales"
 			},
 			"minecraft:tags": {
                 "tags": [

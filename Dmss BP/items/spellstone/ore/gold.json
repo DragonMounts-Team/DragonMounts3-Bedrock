@@ -10,7 +10,7 @@
         "texture": "gold_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Gold Spellstone"
+        "value": "%spellstone.gold"
       }
     }
   }

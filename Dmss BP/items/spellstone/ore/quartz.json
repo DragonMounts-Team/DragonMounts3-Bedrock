@@ -10,7 +10,7 @@
         "texture": "quartz_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Quartz Spellstone"
+        "value": "%spellstone.quartz"
       }
     }
   }

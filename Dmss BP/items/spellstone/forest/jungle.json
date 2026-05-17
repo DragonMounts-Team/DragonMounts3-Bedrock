@@ -10,7 +10,7 @@
         "texture": "jungle_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Jungle Spellstone"
+        "value": "%spellstone.jungle"
       }
     }
   }

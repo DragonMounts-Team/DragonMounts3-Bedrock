@@ -10,7 +10,7 @@
         "texture": "acacia_spellstone"
       },
       "minecraft:display_name": {
-        "value": "Acacia Spellstone"
+        "value": "%spellstone.acacia"
       }
     }
   }
