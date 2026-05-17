@@ -13,9 +13,9 @@
 				"max_durability": 10
 			},
 			"minecraft:display_name": {
-				"value": "Redstone dragon wand"
+				"value": "%dragon.redstone %item.wand"
 			},
-            "minecraft:interact_button":"create ore",
+            "minecraft:interact_button":"%wand.ore",
 			"minecraft:tags": {
                 "tags": [
 					"dmss:wand"

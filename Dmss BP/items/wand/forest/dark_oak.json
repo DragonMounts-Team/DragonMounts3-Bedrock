@@ -13,9 +13,9 @@
 				"max_durability": 20
 			},
 			"minecraft:display_name": {
-				"value": "Dark oak dragon wand"
+				"value": "%dragon.dark_oak %item.wand"
 			},
-            "minecraft:interact_button":"turn invisible",
+            "minecraft:interact_button":"%wand.invisible",
 			"minecraft:tags": {
                 "tags": [
 					"dmss:wand"
