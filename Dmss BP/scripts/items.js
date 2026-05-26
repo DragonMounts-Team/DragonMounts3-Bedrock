@@ -1,4 +1,4 @@
-import { world, system, EquipmentSlot, GameMode, Player} from "@minecraft/server";
+import { world, system, EquipmentSlot, GameMode, Player, EntityComponentTypes} from "@minecraft/server";
 
 function applyDurabilityDamage(source, mainhand) {
     if (source.getGameMode() === GameMode.creative) return;
@@ -100,9 +100,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:acacia_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:acacia_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:acacia_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:acacia_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:acacia_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:acacia_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -125,9 +125,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:azalea_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:azalea_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:azalea_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:azalea_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:azalea_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:azalea_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -150,9 +150,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:birch_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:birch_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:birch_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:birch_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:birch_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:birch_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -200,9 +200,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:dark_oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:dark_oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:dark_oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:dark_oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:dark_oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:dark_oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -225,9 +225,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:jungle_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:jungle_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:jungle_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:jungle_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:jungle_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:jungle_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -250,9 +250,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:mangrove_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:mangorve_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:mangove_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:mangrove_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:mangrove_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:mangrove_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -275,9 +275,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:oak_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:oak_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:oak_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -325,9 +325,9 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             source.runCommandAsync(`effect @s speed 5 1 true`);
             let x = 0;
             while (x < 5) {
-                dimension.runCommandAsync(`particle minecraft:spruce_leaves_particle ${position.x} ${position.y} ${position.y}`);
-                dimension.runCommandAsync(`particle minecraft:spruce_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
-                dimension.runCommandAsync(`particle minecraft:spruce_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
+                dimension.runCommandAsync(`particle dmss:spruce_leaves_particle ${position.x} ${position.y} ${position.y}`);
+                dimension.runCommandAsync(`particle dmss:spruce_leaves_particle ${offset1.x} ${offset1.y} ${offset1.z}`);
+                dimension.runCommandAsync(`particle dmss:spruce_leaves_particle ${offset2.x} ${offset2.y} ${offset2.z}`);
                 x++;
             }
             MagicDamage(source, mainhand);
@@ -384,7 +384,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
             system.runTimeout(() => {
                 source.dimension.spawnParticle("dmss:cast",point);
             for (const target of source.dimension.getEntities({location: point,maxDistance: 6})) {
-                if (target === source) continue;
+                if (target === source||target.getComponent(EntityComponentTypes.TypeFamily).hasTypeFamily("item")) continue;
                     let dx = target.location.x - source.location.x;
                     let dz = target.location.z - source.location.z;
                 const mag = Math.sqrt(dx * dx + dz * dz) || 1;
@@ -392,10 +392,10 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 dz /= mag;
 
                 target.dimension.spawnParticle("dmss:knockback",target.location);
-                target.applyKnockback(dx, dz, 3, 0.4);
+                target.applyKnockback(dx, dz, 4, 0.4);
                 const health = target.getComponent("health");
                 if (!health) continue;
-                target.applyDamage(4, {cause: "magic"});
+                target.applyDamage(7, {cause: "magic"});
             }
         }, 20);
         }
@@ -486,7 +486,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
             MagicDamage(source, mainhand);
             for (const target of dim.getEntities({location: loc,maxDistance: 10})) {
-                if(target===source){return;}
+                if(target===source){continue;}
                 else{
                     target.addEffect("darkness", 1200, {amplifier: 1,showParticles: true});
                     if(target.typeId.inludes("player")){
