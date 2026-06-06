@@ -10,7 +10,7 @@
         "texture": "guidebook"
       },
       "minecraft:display_name": {
-        "value": "Spellbound skies guidebook"
+        "value": "%item.ss_guidebook"
       }
     }
   }

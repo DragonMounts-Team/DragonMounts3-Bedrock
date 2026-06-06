@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "dmss:azalea_cave"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "azalea_nest",
+          "processors": "dmss:empty",
+          "projection":"rigid"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "dmss:azalea_cave"
+  }
+}

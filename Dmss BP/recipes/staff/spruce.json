@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "dmss:spruce_staff"
+		},
+		"tags": [
+			"o_altar"
+		],
+		"pattern": [
+			"  X",
+			" # ",
+			"#  "
+		],
+		"key": {
+			"X": {
+				"item": "dmss:spruce_spellstone"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "dmss:spruce_dragon_staff"
+		},
+    	"unlock":{"context": "AlwaysUnlocked"}
+	}
+}

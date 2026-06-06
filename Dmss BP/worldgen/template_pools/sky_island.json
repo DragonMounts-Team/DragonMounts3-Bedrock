@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "dmss:1_sky_island"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "Island1",
+          "processors": "dmss:empty",
+          "projection":"rigid"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "dmss:1_sky_island"
+  }
+}

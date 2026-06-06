@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "dmss:spruce_circle"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "spruce_nest",
+          "processors": "dmss:empty",
+          "projection":"rigid"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "dmss:spruce_circle"
+  }
+}

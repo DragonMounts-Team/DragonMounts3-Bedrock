@@ -3,7 +3,7 @@ import { world, ItemStack, ItemTypes } from "@minecraft/server";
 world.afterEvents.playerSpawn.subscribe(ev => {
 
     const player = ev.player;
-    if (player.hasTag("guidebook")) return;
+    if (player.hasTag("dmss:guidebook")) return;
     const dimension = player.dimension;
     const playerPos = player.location;
 
@@ -13,5 +13,5 @@ world.afterEvents.playerSpawn.subscribe(ev => {
         y: playerPos.y, 
         z: playerPos.z 
     });
-    player.addTag("guidebook");
+    player.addTag("dmss:guidebook");
 });

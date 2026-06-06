@@ -1,12 +1,9 @@
-import {system } from '@minecraft/server'
+import {world} from '@minecraft/server'
 
-system.afterEvents.scriptEventReceive.subscribe(event => {
-    const dragon = event.sourceEntity
-    const { x, y, z } = dragon.getHeadLocation();
-    const { x: dx, y: dy, z: dz } = dragon.getViewDirection();
-    if (event.id == 'dmss:shoot') {
-    //dm_fireball
-    if (event.message == 'dmss_forest') {
+world.afterEvents.dataDrivenEntityTrigger.subscribe(({entity, eventId}) => {
+    let dragon=entity
+    //forest
+    if (eventId === "dmss:forest_breath") {
         dragon.playAnimation('animation.dragon.ranged_attack', { blendOutTime: 4 });
         const existingVelocity = dragon.getVelocity();
         const dragonDirection = dragon.getViewDirection();
@@ -17,17 +14,16 @@ system.afterEvents.scriptEventReceive.subscribe(event => {
         fireball.setRotation(dragonRotation);
         fireball.applyImpulse({x: existingVelocity.x + dragonDirection.x * 2,y: existingVelocity.y + dragonDirection.y * 2,z: existingVelocity.z + dragonDirection.z * 2});
     }
-    //dm_breath
-    if (event.message == 'dmss_breath') {
+    //sculk
+    if (eventId === "dmss:sculk_breath") {
         dragon.playAnimation('animation.dragon.ranged_attack', { blendOutTime: 4 });
         const existingVelocity = dragon.getVelocity();
         const dragonDirection = dragon.getViewDirection();
         const dragonRotation = dragon.getRotation();
         const { x, y, z } = dragon.getHeadLocation();
         const { x: dx, y: dy, z: dz } = dragon.getViewDirection();
-        const fireball = dragon.dimension.spawnEntity('dmss:dragon_breath', {x: x + dx * 2,y: y + dy * 2,z: z + dz * 2});
+        const fireball = dragon.dimension.spawnEntity('dmss:sculk_shoot', {x: x + dx * 2,y: y + dy * 2,z: z + dz * 2});
         fireball.setRotation(dragonRotation);
         fireball.applyImpulse({x: existingVelocity.x + dragonDirection.x * 2,y: existingVelocity.y + dragonDirection.y * 2,z: existingVelocity.z + dragonDirection.z * 2});
-    }
     }
 })

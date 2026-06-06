@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dmss:birch_pond"
+    },
+    "start_pool": "dmss:birch_pond",
+    "step": "surface_structures",
+    "heightmap_projection": "world_surface",
+    "start_height": {
+        "type": "constant",
+        "value": {
+            "absolute": -2
+        } 
+    },
+    "max_depth": 3,
+    "biome_filters": [
+      {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "birch"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "river"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "lakes"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "ocean"
+          }
+        ]
+      }
+    ],
+    "terrain_adaptation": "none",
+    "liquid_settings": "apply_waterlogging",
+    "dimension_padding": {
+      "top": 20,
+      "bottom": 129
+    }
+  }
+}

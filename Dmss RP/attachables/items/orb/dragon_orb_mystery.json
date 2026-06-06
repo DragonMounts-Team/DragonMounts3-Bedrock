@@ -3,14 +3,12 @@
   "minecraft:attachable": {
     "description": {
       "identifier": "dmss:dragon_orb_mystic",
-      "render_controllers": ["controller.render.item_default"],
+      "render_controllers": ["controller.render.default"],
       "materials": {
-        "default": "entity_emissive_alpha",
-        "enchanted": "entity_alphatest_glint"
+        "default": "entity_alphablend"
       },
       "textures": {
-        "default": "textures/items/dragon_orb/mystery",
-        "enchanted": "textures/misc/enchanted_item_glint"
+        "default": "textures/items/dragon_orb/mystery"
       },
       "geometry": {
         "default": "geometry.big_item"

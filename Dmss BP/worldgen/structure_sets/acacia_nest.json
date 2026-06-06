@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dmss:acacia_nest"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 587717451,
+			"separation": 11,
+			"spacing": 25,
+			"spread_type": "triangular"
+		},
+		"structures": [
+			{
+				"structure": "dmss:acacia_commune",
+				"weight": 10
+			}
+		]
+	}
+}

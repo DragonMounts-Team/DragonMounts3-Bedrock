@@ -10,7 +10,7 @@
         "texture": "dragon_orb"
       },
       "minecraft:display_name": {
-        "value": "Dragon orb"
+        "value": "%orb.dragon"
       },
       "minecraft:hand_equipped": true
     }

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dmss:spruce_nest"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 587717521,
+			"separation": 9,
+			"spacing": 20,
+			"spread_type": "triangular"
+		},
+		"structures": [
+			{
+				"structure": "dmss:spruce_circle",
+				"weight": 10
+			}
+		]
+	}
+}

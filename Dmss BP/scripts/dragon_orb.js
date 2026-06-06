@@ -3,7 +3,17 @@ import { world, system, ItemStack, StructureSaveMode, EntityComponentTypes} from
 world.afterEvents.itemUse.subscribe((item) => {
     const dragonOrbItems = [
         "dmss:dragon_orb_mystic",
-        "dmss:dragon_orb_cherry"
+        "dmss:dragon_orb_cherry",
+        "dmss:dragon_orb_acacia",
+        "dmss:dragon_orb_azalea",
+        "dmss:dragon_orb_birch",
+        "dmss:dragon_orb_dark_oak",
+        "dmss:dragon_orb_jungle",
+        "dmss:dragon_orb_mangrove",
+        "dmss:dragon_orb_oak",
+        "dmss:dragon_orb_pale_oak",
+        "dmss:dragon_orb_spruce",
+        "dmss:dragon_orb_sculk"
     ];
     if(dragonOrbItems.includes(item.itemStack.typeId)){
       if(item.itemStack.getLore().length > 0)
@@ -51,7 +61,17 @@ function handleDragonOrbUse(player, item, entity) {
           let isTamed = entity.hasComponent('minecraft:is_tamed');
           if (isTamed){
             const dropMap = {
-              "dmss:cherry_dragon": "dmss:dragon_orb_cherry"
+              "dmss:cherry_dragon": "dmss:dragon_orb_cherry",
+              "dmss:acacia_dragon": "dmss:dragon_orb_acacia",
+              "dmss:azalea_dragon": "dmss:dragon_orb_azalea",
+              "dmss:birch_dragon": "dmss:dragon_orb_birch",
+              "dmss:dark_oak_dragon": "dmss:dragon_orb_dark_oak",
+              "dmss:jungle_dragon": "dmss:dragon_orb_jungle",
+              "dmss:mangrove_dragon": "dmss:dragon_orb_mangrove",
+              "dmss:oak_dragon": "dmss:dragon_orb_oak",
+              "dmss:pale_oak_dragon": "dmss:dragon_orb_pale_oak",
+              "dmss:spruce_dragon": "dmss:dragon_orb_spruce",
+              "dmss:sculk_dragon": "dmss:dragon_orb_sculk"
             };
             let orbID = Math.round(Math.random()*99999) 
             let dropItemId = dropMap[typeId] ?? "dmss:dragon_orb_mystic";
@@ -66,7 +86,7 @@ function handleDragonOrbUse(player, item, entity) {
                 
             world.structureManager.createFromWorld(`dmss:${orbID}`,entity.dimension,{x,y,z},{x:x+1,y:y+1,z:z+1},{includeEntities:true,includeBlocks:false,saveMode:StructureSaveMode.World})
             entity.remove()
-                player.runCommandAsync(`particle dragonmounts:smoke ${x} ${y} ${z}`)
+                player.runCommandAsync(`particle dmss:smoke ${x} ${y} ${z}`)
                 player.runCommandAsync(`playsound item.orb.capture @s ${x} ${y} ${z}`)
                 player.runCommandAsync(`clear @s dmss:dragon_orb 0 1`)
                 player.dimension.spawnItem(dragon_orb,{x:x,y:y,z:z});

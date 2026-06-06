@@ -1,0 +1,172 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "dmss:sculk_dragon_egg",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "dmss:transforming": {
+          "type": "bool",
+          "client_sync": true,
+          "default": false
+        }
+      }
+    },
+    "component_groups": {
+      "interact":{
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "interact_text": "%egg.pick_up",
+              "spawn_items": {
+                "table": "loot_tables/egg_item/sculk_dragon.json"
+              },
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {"test": "is_family","subject": "other","value": "player"},
+                    {"test": "is_sneaking","subject": "other","operator": "==","value": true},
+                    {"test": "is_tamed", "subject": "self", "operator": "equals", "value": false}
+                  ]
+                },
+                "event": "despawn",
+                "target": "self"
+              }
+            },
+            {
+              "interact_text": "%egg.unlock_guidebook",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {"test": "is_family","subject": "other","value": "player"},
+                    {"test": "has_equipment", "subject": "other","domain": "hand","value": "dmss:guidebook"}
+                  ]
+                },
+                "event": "guidebook",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      "start":{
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "event": "hatching",
+                "target": "self"
+              },
+              "interact_text": "%egg.hatch_start"
+            }
+          ]
+        }
+      },
+      "hatching": {
+        "minecraft:is_ignited": {},
+        "minecraft:ageable": {
+          "duration": 24000,
+          "grow_up": {
+            "event": "hatch",
+            "target": "self"
+          }
+        }
+      },
+      "baby": {
+        "minecraft:is_shaking":{},
+        "minecraft:transformation": {
+          "begin_transform_sound": "block.turtle_egg.crack",
+          "transformation_sound": "block.turtle_egg.crack",
+          "into": "dmss:sculk_dragon<baby>",
+          "delay": {
+            "value": 60
+          }
+        },
+        "minecraft:is_tamed": {}
+      },
+      "despawn":{
+        "minecraft:instant_despawn": {},
+        "minecraft:is_tamed": {}
+      },
+      "transforming":{
+        "minecraft:is_shaking":{},
+        "minecraft:is_tamed": {}
+      }
+    }, 
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {"deals_damage": "no",
+          "on_damage": {
+            "filters": {
+              "all_of": [{"test": "is_tamed"}]
+            }
+          }}
+        ]
+      },
+      "minecraft:is_stackable": {},
+      "minecraft:is_collidable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/sculk_egg.json"
+      },
+      "minecraft:persistent": {},
+      "minecraft:type_family": {
+        "family": [ "egg","dragon_egg" ]
+      },
+      "minecraft:health": {
+        "value": 125,
+        "max": 125
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:push_through": {"value": 0},
+      "minecraft:scale": {"value": 1.0},
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:fire_immune": true,
+       "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:entity_born":{
+        "add":{"component_groups":["start"]}
+      },
+      "guidebook":{
+        "queue_command": {"command": ["scriptevent dmss:guidebook sculk_egg"]}
+      },
+      "despawn": {
+        "add": {"component_groups": ["despawn"]}
+      },
+      "minecraft:entity_spawned":{
+        "add":{"component_groups":["start"]}
+      },
+      "hatching":{
+        "queue_command": {"command": ["scriptevent dmss:guidebook sculk_egg"]},
+        "remove": {"component_groups": ["start"]},
+        "add":{"component_groups":["hatching","interact"]}
+      },
+      "transform":{
+        "set_property": {"dmss:transforming": true},
+        "remove": {"component_groups": ["hatching","inetract"]},
+        "add":{"component_groups":["transforming"]}
+      },
+      "hatch": {
+        "remove": {"component_groups": ["hatching"]},
+        "add": {"component_groups": ["baby"]}
+      }
+    }
+  }
+}

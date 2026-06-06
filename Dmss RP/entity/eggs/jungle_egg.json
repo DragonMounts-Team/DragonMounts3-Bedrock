@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "dmss:jungle_dragon_egg",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/forest_dragon/egg_jungle"
+			},
+			"geometry": {
+				"default": "geometry.forest_egg"
+			},
+			"animations": {
+				"hatching": "animation.egg_particles",
+				"shaking": "animation.egg_shaking",
+				"controller":"controller.animation.dragon_egg",
+				"transforming":"animation.egg_transformation"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"sound_effects": {
+				"egg_krack": "mob.custom_dragon.egg_krack",
+				"hatch": "mob.custom_dragon.hatch"
+			},
+			"particle_effects": {
+				"hatching": "dmss:jungle_egg_hatching"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "jungle_dragon_egg"
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "dmss:dark_oak_ruined_tower"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "dark_oak_nest",
+          "processors": "dmss:empty",
+          "projection":"rigid"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "dmss:dark_oak_ruined_tower"
+  }
+}

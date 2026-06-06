@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dmss:dark_oak_nest"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 587717471,
+			"separation": 11,
+			"spacing": 25,
+			"spread_type": "triangular"
+		},
+		"structures": [
+			{
+				"structure": "dmss:dark_oak_ruined_tower",
+				"weight": 10
+			}
+		]
+	}
+}

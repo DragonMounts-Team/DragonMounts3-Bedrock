@@ -9,7 +9,15 @@
       		}
 		},
 		"components": {
-			"minecraft:icon": "dragon_boots",
+			"minecraft:dyeable": {
+  				"default_color": "#ffffff"
+			},
+			"minecraft:icon": {
+  				"textures": {
+    				"default": "dragon_boots",
+					"dyed": "dragon_boots"
+  				}
+			},
 			"minecraft:max_stack_size":1,
 			"minecraft:wearable": {
 				"protection": 4,
@@ -28,7 +36,7 @@
                 "slot": "armor_feet"
             },
 			"minecraft:display_name": {
-        		"value": "Ore dragon boots"
+        		"value": "%armor.ore_boots"
     		},
 			"minecraft:repairable": {
                 "repair_items": [

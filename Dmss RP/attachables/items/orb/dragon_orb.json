@@ -3,14 +3,12 @@
   "minecraft:attachable": {
     "description": {
       "identifier": "dmss:dragon_orb",
-      "render_controllers": ["controller.render.item_default"],
+      "render_controllers": ["controller.render.default"],
       "materials": {
-        "default": "entity_emissive_alpha_one_sided",
-        "enchanted": "item_in_hand_glint"
+        "default": "entity_alphablend"
       },
       "textures": {
-        "default": "textures/items/dragon_orb/orb_1",
-        "enchanted": "textures/misc/enchanted_item_glint"
+        "default": "textures/items/dragon_orb/orb_1"
       },
       "geometry": {
         "default": "geometry.big_item"

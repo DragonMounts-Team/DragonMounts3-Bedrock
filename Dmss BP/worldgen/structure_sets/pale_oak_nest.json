@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.80",
+	"minecraft:structure_set": {
+		"description": {
+			"identifier": "dmss:pale_oak_nest"
+		},
+		
+		"placement": {
+			"type": "minecraft:random_spread",
+			"salt": 587717511,
+			"separation": 6,
+			"spacing": 13,
+			"spread_type": "triangular"
+		},
+		"structures": [
+			{
+				"structure": "dmss:pale_oak_cemetery",
+				"weight": 10
+			}
+		]
+	}
+}

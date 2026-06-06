@@ -14,7 +14,6 @@
 			"minecraft:damage": 7,
 			"minecraft:hand_equipped": true,
 			"minecraft:can_destroy_in_creative": true,
-			"minecraft:render_offsets": "tools",
 			"minecraft:is_tool":{},
 			"minecraft:pickaxe": {},
 			"minecraft:icon": "gold_dragon_pickaxe",
@@ -22,7 +21,7 @@
 				"max_durability": 2680
 			},
 			"minecraft:display_name": {
-				"value": "Gold dragon pickaxe"
+				"value": "%dragon.gold %item.pickaxe"
 			},
 			"minecraft:enchantable": {
 				"value": 32,
@@ -51,7 +50,8 @@
 					"minecraft:netherite_tier",
 					"minecraft:is_pickaxe",
 					"dmss:tool",
-					"dmss:ore_pickaxe"
+					"dmss:ore_pickaxe",
+					"dmss:pickaxe"
 				]
             }
 		}

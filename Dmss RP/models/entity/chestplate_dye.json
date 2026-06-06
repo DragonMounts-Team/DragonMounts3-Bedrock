@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.dmss_chestplate_dye",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 14, 0]
+				},
+				{
+					"name": "chestplate",
+					"parent": "body",
+					"pivot": [0, 0, 0],
+					"binding": "'body'",
+					"cubes": [
+						{"origin": [-4, 2, -2], "size": [8, 12, 3.5], "inflate": 1.011, "uv": [1, 1]}
+					]
+				}
+			]
+		}
+	]
+}

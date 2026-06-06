@@ -7,15 +7,16 @@
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/entity/cherry_dragon/egg"
+				"default": "textures/entity/forest_dragon/egg_cherry"
 			},
 			"geometry": {
-				"default": "geometry.dragon_egg"
+				"default": "geometry.forest_egg"
 			},
 			"animations": {
 				"hatching": "animation.egg_particles",
 				"shaking": "animation.egg_shaking",
-				"controller":"controller.animation.dragon_egg"
+				"controller":"controller.animation.dragon_egg",
+				"transforming":"animation.egg_transformation"
 			},
 			"scripts": {
 				"animate": [
@@ -27,7 +28,8 @@
 				"hatch": "mob.custom_dragon.hatch"
 			},
 			"particle_effects": {
-				"cherry_hatching": "dmss:cherry_egg_hatching"
+				"hatching": "dmss:cherry_egg_hatching",
+				"transforming": "minecraft:sculk_soul_particle"
 			},
 			"render_controllers": [
 				"controller.render.default"

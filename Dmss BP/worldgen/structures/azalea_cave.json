@@ -1,0 +1,38 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dmss:azalea_cave"
+    },
+    "start_pool": "dmss:azalea_cave",
+    "step": "underground_structures",
+    "heightmap_projection": "none",
+    "start_height": {
+      "type": "uniform",
+      "min": {
+        "above_bottom": 64
+      },
+      "max": {
+        "above_bottom": 110
+      } 
+    },
+    "max_depth": 3,
+    "biome_filters": [
+      {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "lush_caves"
+          }
+        ]
+      }
+    ],
+    "terrain_adaptation": "beard_thin",
+    "liquid_settings": "ignore_waterlogging",
+    "dimension_padding": {
+      "top": 20,
+      "bottom": 10
+    }
+  }
+}

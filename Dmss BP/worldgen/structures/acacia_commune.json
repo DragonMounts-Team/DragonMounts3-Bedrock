@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "dmss:acacia_commune"
+    },
+    "start_pool": "dmss:acacia_commune",
+    "step": "surface_structures",
+    "heightmap_projection": "world_surface",
+    "start_height": {
+        "type": "constant",
+        "value": {
+            "absolute": -1
+        } 
+    },
+    "max_depth": 3,
+    "biome_filters": [
+      {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "savanna"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "river"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "lakes"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "ocean"
+          }
+        ]
+      }
+    ],
+    "terrain_adaptation": "beard_thin",
+    "liquid_settings": "apply_waterlogging",
+    "dimension_padding": {
+      "top": 20,
+      "bottom": 129
+    }
+  }
+}

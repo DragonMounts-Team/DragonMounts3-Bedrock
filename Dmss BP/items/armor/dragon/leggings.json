@@ -9,7 +9,15 @@
       		}
 		},
 		"components": {
-			"minecraft:icon": "dragon_leggings",
+			"minecraft:dyeable": {
+  				"default_color": "#ffffff"
+			},
+			"minecraft:icon": {
+  				"textures": {
+    				"default": "dragon_leggings",
+					"dyed": "dragon_leggings"
+  				}
+			},
 			"minecraft:max_stack_size":1,
 			"minecraft:wearable": {
 				"protection": 4,
@@ -28,7 +36,7 @@
                 "slot": "armor_legs"
             },
 			"minecraft:display_name": {
-        		"value": "Ore dragon leggings"
+        		"value": "%armor.ore_legs"
     		},
 			"minecraft:repairable": {
                 "repair_items": [
