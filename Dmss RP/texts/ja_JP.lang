@@ -218,6 +218,17 @@ wand.invisible=Turn Invisible
 wand.ore=Create Ore
 wand.xp=Summon Xp
 ##vanilla
+action.hint.exit.dmss:acacia_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:azalea_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:birch_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:cherry_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:dark_oak_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:jungle_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:mangrove_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:oak_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:pale_oak_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:spruce_dragon=Sneak to dismount, jump to fly
+action.hint.exit.dmss:sculk_dragon=Sneak to dismount, jump to fly
 item.spawn_egg.entity.dmss:emerald_drake.name=Emerald Drake Spawn Egg
 item.spawn_egg.entity.dmss:gold_drake_o.name=Gold Drake Spawn Egg
 item.spawn_egg.entity.dmss:gold_drake_n.name=Gold Drake Spawn Egg
